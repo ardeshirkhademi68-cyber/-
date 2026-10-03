@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="هم‌صحبت هوشمند پروژه فرهنگی، هنری و تاریخی ریژاو" />
+    <title>ریژاو | هم‌صحبت فرهنگی</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="intro" aria-labelledby="page-title">
+        <p class="eyebrow"><span></span> پروژه فرهنگی، هنری و تاریخی ریژاو</p>
+        <h1 id="page-title">هر روایت،<br /><em>پنجره‌ای به ریشه‌هاست.</em></h1>
+        <p class="lead">هم‌صحبت ریژاو برای پاسخ به پرسش‌ها، راهنمایی بازدید و کشف داستان‌های فرهنگ و هنر کنار شماست.</p>
+        <div class="highlights" aria-label="ویژگی‌ها">
+          <div><b>۲۴/۷</b><span>همراه شما</span></div>
+          <div><b>فرهنگ</b><span>هنر و تاریخ</span></div>
+          <div><b>راهنما</b><span>برای بازدید</span></div>
+        </div>
+      </section>
+
+      <section class="chat-card" aria-label="گفت‌وگو با هم‌صحبت ریژاو">
+        <header class="chat-header">
+          <div class="bot-mark" aria-hidden="true">ر</div>
+          <div>
+            <h2>هم‌صحبت ریژاو</h2>
+            <p><i></i> آنلاین و آماده پاسخ‌گویی</p>
+          </div>
+          <button class="reset-button" id="reset-chat" type="button" title="شروع گفت‌وگوی تازه" aria-label="شروع گفت‌وگوی تازه">↻</button>
+        </header>
+
+        <div class="conversation" id="conversation" aria-live="polite"></div>
+
+        <div class="suggestions" id="suggestions" aria-label="پرسش‌های پیشنهادی">
+          <button type="button">ریژاو چیست؟</button>
+          <button type="button">برنامه بازدید</button>
+          <button type="button">رویدادهای هنری</button>
+        </div>
+
+        <form class="composer" id="chat-form">
+          <label class="sr-only" for="message">پیام شما</label>
+          <input id="message" name="message" autocomplete="off" placeholder="پرسش خود را بنویسید…" />
+          <button type="submit" aria-label="ارسال پیام">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.5 3.2 11 13.7m10.5-10.5-6.7 17.1-3.8-6.6-6.6-3.8L21.5 3.2Z" /></svg>
+          </button>
+        </form>
+        <p class="privacy-note">پاسخ‌ها راهنما هستند؛ اطلاعات حساس شخصی را ارسال نکنید.</p>
+      </section>
+    </main>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
